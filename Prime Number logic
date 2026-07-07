@@ -1,0 +1,20 @@
+class Solution {
+    static boolean isPrime(int n) {
+        // code here
+        boolean p=true;
+        if(n<=1){
+            p=false;
+        }
+        else{
+            for(int i=2;i*i<=n;i++){
+                if(n%i==0){
+                    p=false;
+                    break;
+                    
+                }
+                
+            }
+        }
+        return p;
+    }
+}
